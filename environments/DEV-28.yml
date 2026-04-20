@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "28"
+mappingDefinitions:
+  SRC:
+    database: CONCERT_DEV
+    schema: RAW
+name: DEV
+type: Environment
