@@ -1,0 +1,194 @@
+fileVersion: 1
+id: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+name: STG_TICKETS_TRANSFORM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e5a13d3-0f34-45a0-a0d7-85f5bd33ec78
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: TICKET_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f006a44-c7e3-47f5-bc95-94e25af75425
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32012a83-fce4-4366-8da0-f32b338d088a
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: EVENT_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: feea6495-ac77-4000-bdaa-d144a3d39c36
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f562c58-d125-44ae-a792-0ddc8e35e68f
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: CUSTOMER_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b77c191-0879-46b7-8c5c-840c9736b9a7
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a482807-138c-42a4-9739-89cf84faadc8
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SECTION_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 54a9c222-e40c-4d28-8ce0-dc4356ca982d
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c36ed62b-90f3-4dad-9bfe-c7e0dc2981cd
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(30)
+        description: ""
+        name: TICKET_TYPE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af2c30f7-512c-45eb-8bbc-0285e9472b23
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 649c82af-2374-4db7-9eb1-4b4d4b7ba4f9
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: NUMBER(10,2)
+        description: ""
+        name: FACE_VALUE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b6184f5-f260-435b-90eb-b526824e99a9
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67412bc9-be2c-43c9-b765-2974a492cffb
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: NUMBER(10,2)
+        description: ""
+        name: SERVICE_FEE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e8dfe40-f174-4ace-a8cf-b5c4f42fb170
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83f3f2b1-1cf2-4916-9bc8-1a3ebc1257f8
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: DATE
+        description: ""
+        name: PURCHASE_DATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88d3c928-fc55-4262-a8fe-00f36fa6a344
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed80aaca-e46f-4b89-97d5-13667d809310
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(30)
+        description: ""
+        name: PURCHASE_CHANNEL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4459f700-328f-4f81-86b7-7ffb55245548
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0c5c550-787c-4bd8-a105-fd4f15327311
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: VARCHAR(30)
+        description: ""
+        name: PROMO_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62933454-b5a3-4f18-8757-df034a15ce78
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2818b6b7-37b0-4066-9e20-b6c893c2f672
+          stepCounter: 205e2fc1-a19f-4af5-95c3-c17d99cdd8e5
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOADED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd1fc18a-b6d4-487d-bf60-b7ba6293aaad
+                stepCounter: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_TICKETS: 882c45e6-9796-4dea-ad4e-0fe77be542b3
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: STG_TICKETS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'STG_TICKETS') }} "STG_TICKETS"
+        name: STG_TICKETS_TRANSFORM
+        noLinkRefs: []
+  name: STG_TICKETS_TRANSFORM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

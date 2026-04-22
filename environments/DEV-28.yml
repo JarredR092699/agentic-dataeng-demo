@@ -4,5 +4,8 @@ mappingDefinitions:
   SRC:
     database: CONCERT_DEV
     schema: RAW
+  TRANSFORM:
+    database: CONCERT_DEV
+    schema: TRANSFORM
 name: DEV
 type: Environment
