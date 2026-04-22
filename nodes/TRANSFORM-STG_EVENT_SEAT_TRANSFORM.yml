@@ -1,0 +1,138 @@
+fileVersion: 1
+id: e00ba57a-370d-4c70-af32-a216d88f1f72
+name: STG_EVENT_SEAT_TRANSFORM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TRANSFORM
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d622511-7964-42bb-9759-9fafa3d1fa15
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SECTION_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cb1bb04-9e8f-44f3-bc2d-bc819163952d
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb4b8b8b-f0bb-447e-8dbd-f85b00758287
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: SECTION_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ed80c83-8152-4e66-ac75-5da1cdb36e01
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 877cb71e-84aa-4054-bc01-38fbc90e8eb6
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: LEVEL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a439dcf1-badb-4660-97bb-8900d30593a5
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfcff084-af76-437d-8d73-5fd0e4be686d
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CAPACITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47879d75-d642-41db-8631-8b92605ae8f3
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 385c572c-6fb5-43d2-9750-36d6b997bae9
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IS_PREMIUM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 63eec937-4480-4096-b57b-b278b8d1181b
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 695c643f-da59-4629-a54a-04ed28ca2008
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: NUMBER(10,2)
+        description: ""
+        name: BASE_PRICE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e252c183-9ffd-46fd-b503-21e000dfd420
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f211d1b-7828-4098-9c99-551e85287822
+          stepCounter: e00ba57a-370d-4c70-af32-a216d88f1f72
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOADED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b838dc1-7119-4d2b-a640-f5500a69f30c
+                stepCounter: bf0eeb42-ff4f-4498-be42-b1582da75960
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_EVENT_SEAT: bf0eeb42-ff4f-4498-be42-b1582da75960
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: STG_EVENT_SEAT
+        join:
+          joinCondition: FROM {{ ref('SRC', 'STG_EVENT_SEAT') }} "STG_EVENT_SEAT"
+        name: STG_EVENT_SEAT_TRANSFORM
+        noLinkRefs: []
+  name: STG_EVENT_SEAT_TRANSFORM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

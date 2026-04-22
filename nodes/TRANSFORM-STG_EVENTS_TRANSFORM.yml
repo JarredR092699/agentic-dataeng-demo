@@ -1,0 +1,180 @@
+fileVersion: 1
+id: f2cef53e-a9c0-48c1-965e-82fed7997a58
+name: STG_EVENTS_TRANSFORM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TRANSFORM
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 862d696f-1b32-440f-bd7a-276dddb23c6d
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: EVENT_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: def487ae-af07-4eed-940d-b9891355a33e
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1e946c8-1c30-4009-ab0f-70d2c57ea029
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: EVENT_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71dc138c-51f0-432a-8d78-05fa260bc410
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79039354-3e85-488e-a914-e517772f5ebb
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: VARCHAR(200)
+        description: ""
+        name: ARTIST
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0236c9e1-06cb-45c9-8fae-97588fecb326
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d49c1bd-b598-4733-bc69-792650b5d5cf
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: DATE
+        description: ""
+        name: EVENT_DATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 734d5a31-3626-48fd-88d7-5a49f408c968
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c406ef9e-a05b-4384-bd49-61134875ab24
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: EVENT_TYPE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 06410c5a-55ae-4bda-a554-6964009cf232
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5494930e-90c8-4b8c-83cf-84c4f5aa034f
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: TIME(9)
+        description: ""
+        name: DOORS_OPEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a50023bc-9733-4f0e-ad3f-5ed21e09c15e
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d63f9cb9-4c94-411c-8fb4-3767fb3c644d
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: TIME(9)
+        description: ""
+        name: SHOW_START
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9aa83267-69ac-4d8d-a614-f7b0ed5bfd36
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ee98827-36bf-40d6-a965-5fd29b091bac
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: VENUE_CAPACITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ceea5ef6-1ebe-4294-8109-3422c74464b7
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 498f5600-7d21-4ced-ad5f-348d3b245e85
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: STATUS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5eaad2a9-03ab-45e4-87ab-b1e8ead2bb60
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 340b032c-49e8-42ad-bfe1-e11647db295d
+          stepCounter: f2cef53e-a9c0-48c1-965e-82fed7997a58
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOADED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9b89f5ec-7169-4ea5-b1dc-61d5edbb3f45
+                stepCounter: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_EVENTS: 4431bf99-cc47-4c60-879b-ba39dea1f9b2
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: STG_EVENTS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'STG_EVENTS') }} "STG_EVENTS"
+        name: STG_EVENTS_TRANSFORM
+        noLinkRefs: []
+  name: STG_EVENTS_TRANSFORM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

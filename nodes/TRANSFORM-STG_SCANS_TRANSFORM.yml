@@ -1,0 +1,138 @@
+fileVersion: 1
+id: 99409a3c-1728-4835-a230-926a5f05d46c
+name: STG_SCANS_TRANSFORM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TRANSFORM
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 033ce403-5ba3-4067-b33a-8d107a3bac53
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: SCAN_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7e28e8ac-cd09-43fa-8cbb-37066859d12a
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5230aec2-7d60-40bd-8d3b-7567c6a1ae45
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: TICKET_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5293161-7c26-400a-a645-b98525785a86
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e412049-525a-4871-8480-2b8c123d7a36
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: EVENT_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8188a30-2c43-47aa-ae6e-f7599d411a19
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 607315dc-1e6d-4563-9694-72107324446a
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: SCAN_TIMESTAMP
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d1b2402c-fd70-423e-ab4f-cff222e6e515
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65dae399-ba6d-4c18-a91e-bdf30f79db18
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: GATE_NUMBER
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bb7712cb-c19d-4ad5-aade-7c20f25d6c33
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4d6d350-4f13-498f-a83d-fd9d480841c7
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: SCAN_RESULT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad70b818-dd65-41f6-aa27-4c48da0e07b7
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7e78cfca-709b-45fd-955c-a50de1d4ee5e
+          stepCounter: 99409a3c-1728-4835-a230-926a5f05d46c
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOADED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0f35859-8471-4a21-ad6e-1388fa9cec13
+                stepCounter: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_SCANS: 8c1d176a-cd52-4879-8f1b-7c7dbf01bafc
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: STG_SCANS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'STG_SCANS') }} "STG_SCANS"
+        name: STG_SCANS_TRANSFORM
+        noLinkRefs: []
+  name: STG_SCANS_TRANSFORM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
