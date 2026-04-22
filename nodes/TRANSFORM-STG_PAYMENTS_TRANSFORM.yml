@@ -1,0 +1,166 @@
+fileVersion: 1
+id: bb9c399e-d38a-407c-a028-fbac3d76e998
+name: STG_PAYMENTS_TRANSFORM
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TRANSFORM
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fe41129-8333-48ff-bebd-51f989b38df7
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: PAYMENT_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c0f3f6b-f1a2-428f-8585-c823ad3c13f5
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91d613c8-9478-4b48-94ab-7b8ae64bf375
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: TICKET_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 627bdb2c-e3ef-438f-b028-dd9c3fb75f3d
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2ae28597-1a34-4f42-b4f6-6c54ec4cdfd2
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: CUSTOMER_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96ed0b0b-0623-462f-96a4-627979b61f0d
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d094c282-5ead-4f3a-93c8-0549fea46aa9
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: NUMBER(10,2)
+        description: ""
+        name: PAYMENT_AMOUNT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eec9ae9d-257c-4f83-841e-b1b71dc323df
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7f2125e-580f-4de1-ae3e-dad6ac53b183
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: VARCHAR(30)
+        description: ""
+        name: PAYMENT_METHOD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21ea8268-8243-43bb-a879-7b30bdc43c2f
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ece5568c-956b-44f3-9e8a-57660a8169f0
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: PAYMENT_STATUS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 160e8452-5bcc-481b-887f-b22798bb3251
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73fe1797-77fc-4cdf-a8d4-28b25bed8482
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: TRANSACTION_DATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69b41219-3102-4a5b-ad24-3063519fddfb
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 735aa079-6912-4bd1-9dcc-5e1957f3699f
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: VARCHAR(50)
+        description: ""
+        name: PROCESSOR_REF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3557faca-b2df-4d68-b37d-8ae4e5c2c263
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f722997e-6a00-4bb7-a619-b14f9f5ebfec
+          stepCounter: bb9c399e-d38a-407c-a028-fbac3d76e998
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOADED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1d7dcbe-2bf7-4d4d-8057-fd6bbde164a8
+                stepCounter: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_PAYMENTS: 55197c78-dba8-4c48-8f6a-43b16cbfecf1
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: STG_PAYMENTS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'STG_PAYMENTS') }} "STG_PAYMENTS"
+        name: STG_PAYMENTS_TRANSFORM
+        noLinkRefs: []
+  name: STG_PAYMENTS_TRANSFORM
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
