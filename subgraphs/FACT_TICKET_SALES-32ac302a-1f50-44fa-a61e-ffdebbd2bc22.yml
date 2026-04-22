@@ -1,0 +1,13 @@
+fileVersion: 1
+id: 32ac302a-1f50-44fa-a61e-ffdebbd2bc22
+name: FACT_TICKET_SALES
+steps:
+  - 5a00f435-6cb4-4c6f-a861-1b60ea22f882
+  - 838fface-03bc-4947-bd7e-fe6e22157f41
+  - 90539357-4af9-4084-b329-de2c0cf2635f
+  - 99409a3c-1728-4835-a230-926a5f05d46c
+  - bb9c399e-d38a-407c-a028-fbac3d76e998
+  - e00ba57a-370d-4c70-af32-a216d88f1f72
+  - f2cef53e-a9c0-48c1-965e-82fed7997a58
+  - fd1b0db1-d53b-4165-b48c-baaeaee2d222
+type: Subgraph
