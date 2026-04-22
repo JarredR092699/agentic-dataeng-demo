@@ -1,6 +1,9 @@
 fileVersion: 1
 id: "28"
 mappingDefinitions:
+  FACT:
+    database: ""
+    schema: ""
   SRC:
     database: CONCERT_DEV
     schema: RAW
